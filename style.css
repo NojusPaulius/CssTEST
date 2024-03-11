@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    border: 8px solid green;
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+.borderAboveHeader::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color: green; 
+    z-index: 999;
+}
+
+header{
+    position: fixed;
+    width: 99%;
+    background-color: aliceblue;
+
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+
+    display: flex;
+    justify-content: space-between;
+
+    z-index: 100;
+    
+    
+
+
+}
+
+.logoDiv{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logoText{
+    font-size: 30px;
+}
+
+
+.navContainer{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    
+
+
+}
+.navText{
+    font-size: 45px;
+}
+
+.headerPart{
+    position: relative;
+    top: 0px;
+    height: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerPart::before{
+    content: "";
+    position: absolute;
+    top: 5vh;
+    height: 90%;
+    width: 100%;
+    background-image: url(/images/gaming.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -2;
+}
+
+.logoText2{
+    font-size: 80px;
+}
+
+.centerLogoDivas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
+    background-color: aliceblue;
+    height: 60%;
+    width: 60%;
+
+}
+
+.mmorpgSection{
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    gap: 100px;
+    
+
+}
+
+.gamesTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+h2{
+    font-size: 80px;
+    
+}
+
+.mmorpgArticle{
+    display: flex;
+    width: 40%;
+    
+}
+
+.mmorpgText{
+    font-size: 20px;
+}
+
+.sandboxSection{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.sandboxArticle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 15%;
+
+
+}
+
+h3{
+    margin: 100px;
+    font-size: 60px;
+}
+.footer{
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.footerTextDiv{
+    display: flex;
+    gap: 50px;
+}
+
+@media(max-width: 1025px){
+
+    .footer{
+        height: 1100px;
+    }
+
+}
+
+@media(max-width:769px){
+
+    body{
+        width: 100vw;
+    }
+
+    .logoText{
+        font-size: 20px;
+    }
+    
+    .navText{
+        font-size: 25px;
+    }
+
+    .footer{
+        height: 1200px;
+    }
+    .logoText2{
+        font-size: 50px;
+    }
+
+    .sandboxSection{
+        gap: 50px;
+    }
+}
+
+@media(max-width:426px){
+
+
+
+    #sandbox{
+        font-size: 50px;
+    }
+
+    header{
+        width: 95%;
+    }
+
+    .navContainer{
+        gap: 15px;
+    }
+
+    .navText{
+        font-size: 14px;
+    }
+    .logoText{
+        font-size: 20px;
+    }
+
+    .centerLogoDivas{
+        width: 350px;
+        height: 250px;
+    }
+
+
+    h2{
+        font-size: 70px;
+    }
+
+    .mmorpgArticle{
+        width: 90%;
+
+    }
+
+    .sandboxSection{
+        gap: 70px;
+    }
+
+    .footer{
+        height: 1800px;
+    }
+
+}
+
+@media(max-width: 376px){
+    body{
+        width: 100vw;
+    }
+
+
+    header{
+        width: 94%;
+    }
+
+    .logoText{
+        font-size: 15px;
+    }
+
+    .navText{
+        font-size: 12px;
+    }
+
+    .sandboxSection{
+        width: 70vw;
+        margin-left: 30px;
+
+    }
+
+    h2{
+        font-size: 40px;
+    }
+
+    #sandbox{
+        font-size: 35px;
+    }
+}
